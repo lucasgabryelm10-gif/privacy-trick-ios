@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Privacy Trick iOS 1.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- FUNDO COM BOLINHAS -->
+  <div class="particles"></div>
+
+  <!-- PAINEL -->
+  <div class="panel" id="panel">
+
+    <h1>Painel Privacy Trick iOS 1.0</h1>
+
+    <!-- TABS -->
+    <div class="tabs">
+      <button class="tab active" onclick="trocarAba('headtrick', this)">Headtrick</button>
+      <button class="tab" onclick="trocarAba('bypass', this)">Bypass</button>
+    </div>
+
+    <!-- ABA HEADTRICK -->
+    <div class="aba active" id="headtrick">
+
+      <div class="item">
+        <label>Auxílio (Modo de Sensi)</label>
+        <input type="range" min="0" max="1" value="0" oninput="mudarSensi(this)">
+        <span id="sensiText">Sensi Baixa</span>
+      </div>
+
+      <div class="item">
+        <button class="aimlock" onclick="ativarAimlock(this)">AIMLOCK</button>
+      </div>
+
+    </div>
+
+    <!-- ABA BYPASS -->
+    <div class="aba" id="bypass">
+
+      <div class="item">
+        <button class="bypass-btn">Bypass Safe</button>
+      </div>
+
+      <div class="item">
+        <button class="bypass-btn danger" onclick="fecharPainel()">Bypass Pro Mundo</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
