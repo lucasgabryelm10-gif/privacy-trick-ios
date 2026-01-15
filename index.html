@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Privacy Trick iOS 1.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="particles"></div>
+
+<div class="panel" id="panel">
+  <h1>Painel Privacy Trick iOS 1.0</h1>
+
+  <div class="tabs">
+    <button class="tab active" onclick="trocarAba('head', this)">Headtrick</button>
+    <button class="tab" onclick="trocarAba('bypass', this)">Bypass</button>
+  </div>
+
+  <!-- HEADTRICK -->
+  <div class="aba active" id="head">
+
+    <div class="grid">
+      <div class="card">
+        <p>Aimlock</p>
+        <button onclick="toggle(this)">ON</button>
+      </div>
+
+      <div class="card">
+        <p>Combo Headtrick</p>
+        <button onclick="toggle(this)">ON</button>
+      </div>
+
+      <div class="card">
+        <p>Sticky Aim</p>
+        <button onclick="toggle(this)">ON</button>
+      </div>
+    </div>
+
+    <div class="card full">
+      <p>Modo de Sensibilidade</p>
+      <div class="btn-group">
+        <button onclick="sensi(this)">Baixa</button>
+        <button onclick="sensi(this)">Alta</button>
+      </div>
+    </div>
+
+    <div class="card full">
+      <p>FOV <span id="fov">50</span></p>
+      <input type="range" min="0" max="100" value="50"
+        oninput="document.getElementById('fov').innerText=this.value">
+    </div>
+
+  </div>
+
+  <!-- BYPASS -->
+  <div class="aba" id="bypass">
+    <div class="card full">
+      <button class="safe">Bypass Safe</button>
+    </div>
+
+    <div class="card full">
+      <button class="danger" onclick="fecharPainel()">Bypass Pro Mundo</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
