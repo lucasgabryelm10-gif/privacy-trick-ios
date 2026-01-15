@@ -1,0 +1,71 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:black;height:100vh;overflow:hidden}
+
+.particles::before{
+  content:"";position:fixed;inset:0;
+  background:radial-gradient(white 1px,transparent 1px);
+  background-size:40px 40px;opacity:.15
+}
+
+.panel{
+  width:350px;background:#000;
+  border:2px solid red;border-radius:16px;
+  box-shadow:0 0 20px red;
+  padding:14px;
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%)
+}
+
+h1{text-align:center;color:white;font-size:15px;margin-bottom:12px}
+
+.tabs{display:flex;gap:8px;margin-bottom:12px}
+.tab{
+  flex:1;padding:8px;border-radius:10px;
+  background:#111;border:1px solid red;color:white
+}
+.tab.active{background:red;color:black}
+
+.aba{display:none}
+.aba.active{display:block}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+}
+
+.card{
+  background:#111;
+  border:1px solid red;
+  border-radius:12px;
+  padding:8px;
+  color:white;
+  text-align:center;
+}
+
+.card.full{margin-top:10px}
+
+.card p{font-size:12px;margin-bottom:6px}
+
+.card button{
+  width:100%;padding:6px;
+  background:#000;border:1px solid red;
+  color:white;border-radius:8px
+}
+
+.card button.active{
+  background:red;color:black
+}
+
+.btn-group{display:flex;gap:8px}
+.btn-group button{flex:1}
+
+input[type=range]{width:100%}
+
+.safe{
+  background:#111;color:white;border:1px solid red
+}
+
+.danger{
+  background:darkred;color:white;border:none
+}
