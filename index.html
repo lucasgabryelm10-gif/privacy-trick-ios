@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Trick iOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Privacy Trick iOS</h1>
+
+    <div class="buttons">
+      <button onclick="ativarModo(this)">Aimlock</button>
+      <button onclick="ativarModo(this)">Headdot</button>
+      <button onclick="ativarModo(this)">Sticky Aim</button>
+    </div>
+
+    <div class="slider-group">
+      <label>Geral <span id="v-geral">90</span></label>
+      <input type="range" min="0" max="100" value="90" oninput="atualizar(this,'v-geral')">
+
+      <label>Red Dot <span id="v-reddot">85</span></label>
+      <input type="range" min="0" max="100" value="85" oninput="atualizar(this,'v-reddot')">
+
+      <label>Mira 2x <span id="v-2x">80</span></label>
+      <input type="range" min="0" max="100" value="80" oninput="atualizar(this,'v-2x')">
+
+      <label>Mira 4x <span id="v-4x">72</span></label>
+      <input type="range" min="0" max="100" value="72" oninput="atualizar(this,'v-4x')">
+
+      <label>Sniper <span id="v-sniper">60</span></label>
+      <input type="range" min="0" max="100" value="60" oninput="atualizar(this,'v-sniper')">
+
+      <label>Aceleração <span id="v-acc">100</span></label>
+      <input type="range" min="0" max="100" value="100" oninput="atualizar(this,'v-acc')">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
